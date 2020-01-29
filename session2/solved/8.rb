@@ -4,3 +4,14 @@ def got_three?(elements)
   end
   false
 end
+
+def got_three?(numbers)
+
+  numbers.each_cons(3) do |a,b, c|
+    if a == b && b== c
+      return true
+    else
+      return false
+    end
+  end
+end
